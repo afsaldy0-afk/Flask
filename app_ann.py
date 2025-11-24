@@ -8,18 +8,18 @@ from tensorflow.keras.models import load_model
 
 app = Flask(__name__)
 
-LARAVEL_KALIBRASI_KUALITAS_UDARA_ENDPOINT = "https://weather.kemala-smart-v2.com/api/kalibrasi-kualitas-udara-1"
+LARAVEL_KALIBRASI_KUALITAS_UDARA_ENDPOINT = "API-Web"
 
 # === DEKLARASI PATH FILE DAN VARIABEL PENTING ===
-MODEL_PATH         = "Model_Kalibrasi/kalibrasi_kualitas_udara_1/ann_best_model.keras"
-SCALER_X_PATH      = "Model_Kalibrasi/kalibrasi_kualitas_udara_1/scaler_X.joblib"
-EMA_CSV            = "Model_Kalibrasi/kalibrasi_kualitas_udara_1/ema.csv"
+MODEL_PATH         = "Lokasi File Model (.keras)"
+SCALER_X_PATH      = "Lokasi Scaler (.joblib)"
+EMA_CSV            = "Lokasi ema.csv"
 BUFFER_SIZE        = 6  # rolling window untuk span=5
 TARGET_SCALER_PATH = {
-    "PM 2.5_BMKG": "Model_Kalibrasi/kalibrasi_kualitas_udara_1/target_scaler_PM 2.5_BMKG.joblib",
-    "CO_BMKG": "Model_Kalibrasi/kalibrasi_kualitas_udara_1/target_scaler_CO_BMKG.joblib",
-    "CH4_BMKG": "Model_Kalibrasi/kalibrasi_kualitas_udara_1/target_scaler_CH4_BMKG.joblib",
-    "OZON_BMKG": "Model_Kalibrasi/kalibrasi_kualitas_udara_1/target_scaler_OZON_BMKG.joblib"
+    "PM 2.5_BMKG": "Lokasi Scaler pm (.joblib)",
+    "CO_BMKG": "Lokasi Scaler co (.joblib)",
+    "CH4_BMKG": "Lokasi Scaler ch4 (.joblib)",
+    "OZON_BMKG": "Lokasi Scaler o3 (.joblib)"
 }
 
 FEATURE_ORDER = [
