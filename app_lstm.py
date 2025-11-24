@@ -12,8 +12,8 @@ import requests
 app = Flask(__name__)
 
 
-LARAVEL_PREDIKSI_ENDPOINT = "https://weather.kemala-smart-v2.com/api/prediksi-klasifikasi-1"
-LARAVEL_KLASIFIKASI_UDARA_ENDPOINT = "https://weather.kemala-smart-v2.com/api/klasifikasi-udara-1"
+LARAVEL_PREDIKSI_ENDPOINT = "API-web"
+LARAVEL_KLASIFIKASI_UDARA_ENDPOINT = "API-web"
 
 # --- Konfigurasi ---
 ROLLING_CSV_PATH = 'Model_Prediksi/prediksi_1/rolling_window_1.csv'
