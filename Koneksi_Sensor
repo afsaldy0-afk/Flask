@@ -2,7 +2,7 @@ BME280 (I2C)   : SDA -> GPIO21    (default SDA)
                  SCL -> GPIO22    (default SCL)
 
 PMS7003 (UART) : RX (kuning) -> TX ESP32 (GPIO17)  
-  		 TX (biru)   -> RX ESP32 (GPIO16)
+  		           TX (biru)   -> RX ESP32 (GPIO16)
                  Power 5V/GND
 
 MAX485 (RS485) : RO  -> GPIO32    (Serial1 RX)
